@@ -45,3 +45,33 @@ class Solution{
 		System.out.println();
 	}
 }
+public class Reversal {
+    public static void main(String args[])
+    {
+        int aryy[]={1,2,3,4,5,6};
+        int n=aryy.length;
+        for(int i=0;i<n/2;i++)
+        {
+            int temp=aryy[i];
+            aryy[i]=aryy[n-i-1];
+            aryy[n-i-1]=temp;
+
+
+        }
+        System.out.println("Reversal of arrya is:");
+        for(int i=0;i<n;i++)
+        {
+          
+            System.out.print(aryy[i]+" ");
+        }
+        System.out.println("");
+        
+
+    }
+    
+}
+
+
+
+
+
